@@ -1,0 +1,83 @@
+msgid "_EMAIL_HEADER_TITLE_"
+msgstr "Header (Non-members)"
+
+msgid "_EMAIL_HEADER_DESCRIPTION_"
+msgstr "This can be added to other emails using the [header] placeholder."
+
+msgid "_EMAIL_FOOTER_TITLE_"
+msgstr "Footer (Non-members)"
+
+msgid "_EMAIL_FOOTER_DESCRIPTION_"
+msgstr "This can be added to other emails using the [footer] placeholder."
+
+msgid "_EMAIL_HEADER_MEMBER_TITLE_"
+msgstr "Header (Members)"
+
+msgid "_EMAIL_HEADER_MEMBER_DESCRIPTION_"
+msgstr "This can be added to other emails using the [header] placeholder."
+
+msgid "_EMAIL_FOOTER_MEMBER_TITLE_"
+msgstr "Footer (Members)"
+
+msgid "_EMAIL_FOOTER_MEMBER_DESCRIPTION_"
+msgstr "This can be added to other emails using the [footer] placeholder."
+
+msgid "_EMAIL_MAIL_CONTACT_TITLE_"
+msgstr "Contact Form Email"
+
+msgid "_EMAIL_MAIL_CONTACT_DESCRIPTION_"
+msgstr "This email is sent to the site email when a member sends a message using the contact page."
+
+msgid "_EMAIL_FRIEND_REQUEST_TITLE_"
+msgstr "Friend Request"
+
+msgid "_EMAIL_FRIEND_REQUEST_DESCRIPTION_"
+msgstr "This email is sent to the user when other user send request add friend."
+
+msgid "_EMAIL_SITE_INVITE_TITLE_"
+msgstr "Invitation"
+
+msgid "_EMAIL_SITE_INVITE_DESCRIPTION_"
+msgstr "This is the email that gets sent when members invite their friends."
+
+msgid "_EMAIL_BULKMAIL_TITLE_"
+msgstr "Bulkmail"
+
+msgid "_EMAIL_BULKMAIL_DESCRIPTION_"
+msgstr "This is the email admin sent to user using bulkmail."
+
+msgid "_EMAIL_WELCOME_USER_TITLE_"
+msgstr "Welcome"
+
+msgid "_EMAIL_WELCOME_USER_DESCRIPTION_"
+msgstr "This is the email that gets sent when a member signs up."
+
+msgid "_EMAIL_WELCOME_USER_CONFIRM_TITLE_"
+msgstr "Welcome confirm"
+
+msgid "_EMAIL_WELCOME_USER_CONFIRM_DESCRIPTION_"
+msgstr "This is the email that gets sent when a member signs up with confirm link."
+
+msgid "_EMAIL_NEW_REGISTRATION_TITLE_"
+msgstr "New Registration"
+
+msgid "_EMAIL_NEW_REGISTRATION_DESCRIPTION_"
+msgstr "This is the email that gets sent to admin when a member signs up."
+
+msgid "_EMAIL_RESET_PASSWORD_TITLE_"
+msgstr "Forgot Password"
+
+msgid "_EMAIL_RESET_PASSWORD_DESCRIPTION_"
+msgstr "This is the email sent when user reset password."
+
+msgid "_EMAIL_ADMIN_CHANGE_PASSWORD_TITLE_"
+msgstr "Admin change password"
+
+msgid "_EMAIL_ADMIN_CHANGE_PASSWORD_DESCRIPTION_"
+msgstr "This is the email sent when admin change password a user."
+
+msgid "_EMAIL_NOTIFICATIONS_SUMMARY_TITLE_"
+msgstr "Notifications Summary"
+
+msgid "_EMAIL_NOTIFICATIONS_SUMMARY_DESCRIPTION_"
+msgstr "This is the email using for Notifications Summary."

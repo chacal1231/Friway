@@ -1,0 +1,69 @@
+<?php $upload_video = Configure::read('UploadVideo.uploadvideo_enabled');?>
+<?php if($upload_video): ?>
+<?php 
+echo $this->Html->script(array('jquery.fileuploader'), array('inline' => false)); 
+echo $this->Html->css(array( 'fineuploader' )); 
+?>
+<?php endif; ?>
+
+<?php $this->setNotEmpty('west');?>
+<?php $this->start('west'); ?>
+    <div class="box2 filter_block">
+        <h3 class="visible-xs visible-sm"><?php echo __( 'Browse')?></h3>
+        <div class="box_content">
+            <?php echo $this->element('sidebar/menu'); ?>
+            <?php echo $this->element('lists/categories_list')?>
+            <?php echo $this->element('sidebar/search'); ?>
+        </div>
+    </div>
+<?php $this->end(); ?>
+
+<div class="bar-content">
+    <div class="content_center">
+<?php echo $this->element('hooks', array('position' => 'videos_top') ); ?> 
+    <div class="mo_breadcrumb">
+        <h1><?php echo __( 'Videos')?></h1>
+        <?php if (!empty($uid)): ?>	
+        <?php
+      $this->MooPopup->tag(array(
+             'href'=>$this->Html->url(array("controller" => "videos",
+                                            "action" => "create",
+                                            "plugin" => 'video',
+                                            
+                                        )),
+             'title' => __( 'Share New Video'),
+             'innerHtml'=> __( 'Share New Video'),
+          	'data-backdrop' => 'static',
+          'class' => 'button button-action topButton button-mobi-top'
+     ));
+ ?>
+        <?php if($upload_video): ?>
+        <!-- check enabled upload video from pc -->
+        <?php
+            $this->MooPopup->tag(array(
+                   'href'=>$this->Html->url(array("controller" => "upload_videos",
+                                                  "action" => "ajax_upload",
+                                                  "plugin" => 'upload_video',
+
+                                              )),
+                   'title' => __( 'Upload Video'),
+                   'innerHtml'=> __( 'Upload Video'),
+                	'data-backdrop' => 'static',
+                    'data-keyboard' => 'false',
+                'class' => 'button button-action topButton button-mobi-top'
+           ));
+       ?>
+        <?php endif; ?>
+        
+        <?php endif; ?>
+    </div>
+    <ul class="video-content-list" id="list-content">
+        <?php 
+        if ( !empty( $this->request->named['category_id'] ) )
+                echo $this->element( 'lists/videos_list', array( 'more_url' => '/videos/browse/category/' . $this->request->named['category_id'] . '/page:2' ) );
+        else
+                echo $this->element( 'lists/videos_list', array( 'more_url' => '/videos/browse/all/page:2' ) );
+        ?>		
+    </ul>
+    </div>
+</div>
