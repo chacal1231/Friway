@@ -1,1 +1,0 @@
-<?php echo __('was tagged in a photo');?>

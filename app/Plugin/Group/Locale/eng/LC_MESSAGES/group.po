@@ -1,5 +1,0 @@
-msgid "_EMAIL_GROUP_INVITE_NONE_MEMBER_TITLE_"
-msgstr "Group invite for non member"
-
-msgid "_EMAIL_GROUP_INVITE_NONE_MEMBER_DESCRIPTION_"
-msgstr "This is mail invite for non member."
